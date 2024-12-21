@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Supercar Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Supercar Showcase</div>
+        <ul>
+            <li><a href="HOME.html">Home</a></li>
+            <li><a href="Cars.html"> Cars</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+
+ <!-- Hero Section (Homepage) -->
+    <section id="home" class="hero">
+        <h1>Welcome to Supercar Showcase</h1>
+        <p>Discover your dream car today! Explore our exclusive collection of the most exotic cars in the world.</p>
+    </section>
+ <!-- Our Cars Section -->
+    <section id="cars" class="cars">
+        <h2>Our Collection</h2>
+        <div class="car-gallery">
+            <!-- 10 Supercars Added -->
+            <div class="car" onclick="showCarDetails('Ferrari LaFerrari')">
+                <img src="C:\Users\palla\Downloads\yellow-bugatti-chiron-4k-lkeoymwum7n3v1g9.jpg" alt="Ferrari LaFerrari">
+                <h3>Ferrari LaFerrari</h3>
+                <p>$1.5 Million</p>
+            </div>
+            <div class="car" onclick="showCarDetails('Lamborghini Aventador')">
+                <img src="path/to/lamborghini-aventador.jpg" alt="Lamborghini Aventador">
+                <h3>Lamborghini Aventador</h3>
+                <p>$500,000</p>
+            </div>
+            <div class="car" onclick="showCarDetails('Porsche 911 Turbo')">
+                <img src="path/to/porsche-911-turbo.jpg" alt="Porsche 911 Turbo">
+                <h3>Porsche 911 Turbo</h3>
+                <p>$150,000</p>
+            </div>
+            <div class="car" onclick="showCarDetails('McLaren P1')">
+                <img src="path/to/mclaren-p1.jpg" alt="McLaren P1">
+                <h3>McLaren P1</h3>
+                <p>$1.15 Million</p>
+            </div>
+            <div class="car" onclick="showCarDetails('Bugatti Veyron')">
+                <img src="path/to/bugatti-veyron.jpg" alt="Bugatti Veyron">
+                <h3>Bugatti Veyron</h3>
+                <p>$2.5 Million</p>
+            </div>
+            <div class="car" onclick="showCarDetails('Aston Martin DB11')">
+                <img src="path/to/aston-martin-db11.jpg" alt="Aston Martin DB11">
+                <h3>Aston Martin DB11</h3>
+                <p>$205,000</p>
+            </div>
+            <div class="car" onclick="showCarDetails('Ferrari 488 GTB')">
+                <img src="path/to/ferrari-488-gtb.jpg" alt="Ferrari 488 GTB">
+                <h3>Ferrari 488 GTB</h3>
+                <p>$280,000</p>
+            </div>
+            <div class="car" onclick="showCarDetails('Lamborghini Huracán')">
+                <img src="path/to/lamborghini-huracan.jpg" alt="Lamborghini Huracán">
+                <h3>Lamborghini Huracán</h3>
+                <p>$250,000</p>
+            </div>
+            <div class="car" onclick="showCarDetails('Rolls-Royce Wraith')">
+                <img src="path/to/rolls-royce-wraith.jpg" alt="Rolls-Royce Wraith">
+                <h3>Rolls-Royce Wraith</h3>
+                <p>$343,350</p>
+            </div>
+            <div class="car" onclick="showCarDetails('Koenigsegg Agera RS')">
+                <img src="path/to/koenigsegg-agera-rs.jpg" alt="Koenigsegg Agera RS">
+                <h3>Koenigsegg Agera RS</h3>
+                <p>$2.5 Million</p>
+            </div>
+        </div>
+    </section>
+ <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+ <!-- Car Details Modal -->
+    <div id="carModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeCarModal()">&times;</span>
+            <h3 id="carTitle"></h3>
+            <p id="carDescription"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
